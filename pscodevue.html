@@ -361,7 +361,7 @@ ph.classList.toggle('hidden', ta.value !== '');
 // code function
 function code() {
 
-document.getElementById('show').addEventListener('click', function() {
+document.getElementById('code').addEventListener('change', function() {
 const selectElement = document.getElementById('code');
 const selectedValue = selectElement.value;
 const selectedText = selectElement.options[selectElement.selectedIndex].text;
@@ -455,6 +455,7 @@ phoff();
 
 <div>
 <select id="code" class="temp" name="code">
+<option value="default">## please select ##</option>
 <option value="template">Template</option>
 <option value="vtext">v-text</option>
 <option value="vbind">v-bind</option>
@@ -475,7 +476,7 @@ phoff();
 
 <div class="inwd">
 <div class="inps">
-<label class="push"><input id="show" value="Push" type="button" onclick="push();">Push</label>
+<!--<label class="push"><input id="show" value="Push" type="button" onclick="push();">Push</label>-->
 <label class="copy"><input id="copy" value="Copy" type="button">Copy</label>
 </div>
 </div>
